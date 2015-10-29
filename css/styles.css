@@ -298,6 +298,20 @@ h2::after {
   background: #e2e2e2;
   padding-top: 50px;
 }
+.dark-bg i {
+  background: #e2e2e2;
+  font-size: 100px;
+  padding-top: 50px;
+}
+.dark-bg i:hover {
+  color: #00BCD4;
+  font-size: 100px;
+  padding-top: 50px;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
 .light-box {
   background-color: rgb(255, 255, 255, 0);
   padding: 15px 0;
@@ -354,55 +368,100 @@ NAVIGATION BAR
 ========================================================================== */
 
 .navigation {
-  background-color: #fff;
+  background-color: #607D8B;
   position: fixed;
   width: 100%;
   padding-bottom: 10px;
   padding-top: 0px;
-  opacity: 0.85;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
 }
-.navbar-brand {
-  margin: -5px;
-  float: left;
-  color: #333;
-  text-transform: uppercase;
-}
-.navbar-brand span {
-  color: #ea1616;
-  font-weight: 600;
-}
-.navbar-brand i {
-  font-size: 40px;
-  margin-top: -10px;
-}
+
 .menu {
   font-size: 15px;
   float: right;
-  text-transform: uppercase;
   font-weight: 100;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
+
 .nav-tabs {
   border-bottom: 0;
 }
 .nav-tabs > li {
+  color: #fff;
   float: left;
   margin-bottom: 0;
+  border-radius: 5px;
 }
 .nav-tabs > li > a {
-  border-radius: 0;
-  color: #333;
+  border-radius: 5px;
+  color: #CFD8DC;
   padding: 15px;
+  text-transform: uppercase;
+  border-color: #607D8B;
 }
 .nav-tabs > li > a:hover {
-  color: #ea1616;
-  border-color: #fff #fff #fff;
-  border-radius: 0;
-  background-color: #fff;
+  color: #004D40;
+  background-color: #00BFA5;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  border-color: #607D8B;
 }
+
+/*========DUPLICATE FOR RESUME SECTION========*/
+.navigation2 {
+  background-color: #B71C1C;
+  position: fixed;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-top: 0px;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+}
+
+.menu2 {
+  font-size: 15px;
+  float: right;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.nav-tabs2 {
+  border-bottom: 0;
+}
+.nav-tabs2 > li {
+  color: #fff;
+  float: left;
+  margin-bottom: 0;
+  border-radius: 5px;
+}
+.nav-tabs2 > li > a {
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px;
+  text-transform: uppercase;
+  border-color: #E57373;
+}
+.nav-tabs2 > li > a:hover {
+  color: #B71C1C;
+  background-color: #E57373;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  border-color: #607D8B;
+}
+
 
 /* ==========================================================================
 PAGE HEADER
@@ -414,7 +473,7 @@ PAGE HEADER
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 85px 0 100px 0;
+  padding: 150px 0 100px 0;
   height: auto;
   overflow-x: hidden;
 }
@@ -489,6 +548,9 @@ TECHNICAL SKILLS
   text-transform: lowercase;
   letter-spacing: 3px;
 }
+.skills hr {
+  width: 100px;
+}
 .skillspad {
   letter-spacing: 3px;
   text-align: center;
@@ -547,6 +609,16 @@ h1.arrow {
   padding-top: 0px;
   font-weight: bold;
 }
+h1.arrow-white {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  background: url('../img/h1-bg2.png') no-repeat center bottom;
+  padding-bottom: 30px;
+  padding-top: 0px;
+  font-weight: bold;
+}
 
 /* ==========================================================================
 CONTACT US
@@ -593,7 +665,7 @@ footer a {
   overflow-x: hidden;
 }
 footer {
-  background-color: #242830;
+  background-color: #006064;
   padding: 30px 0 30px;
   opacity: 0.8;
 }
@@ -659,6 +731,7 @@ PORTFOLIO EXPERIENCE
   text-align: center;
   overflow-x: hidden;
 }
+
 .filter {
   -webkit-filter: brightness(0) invert(0);
   opacity: 0.8;
@@ -768,6 +841,10 @@ a.close-overlay {
   background-color: #78909C;
 }
 
+.resume {
+  background-color: #009688;
+}
+
 /* ==========================================================================
 PORTFOLIO & MODALS
 ========================================================================== */
@@ -809,3 +886,74 @@ Waypoints
 }
 
 /*=========*/
+
+.btn {
+  font-size: 18px;
+  display: inline-block;
+  padding: 20px 40px;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  background: transparent;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+.btn:hover, .btn:focus {
+  color: white;
+}
+.btn.btn-blue {
+  background: #00BFA5;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+}
+.btn.btn-blue:hover {
+  background: #00838F;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.btn.btn-green {
+  background: #2E7D32;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+}
+.btn.btn-green:hover {
+  background: #1B5E20;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.btn.btn-orange {
+  background: #FF9800;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 8px 8px 0;
+}
+.btn.btn-orange:hover {
+  background: #EF6C00;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+
+
+.pdfButton {
+  overflow-x: hidden;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #e6e3e3;
+}
