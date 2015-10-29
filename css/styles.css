@@ -269,7 +269,7 @@ a {
   transition: all 0.5s;
 }
 a:hover, a:focus {
-  color: #ea1616;
+  color: #004D40;
   text-decoration: none;
 }
 p {
@@ -286,7 +286,7 @@ h2 {
 }
 h2::after {
   content: " ";
-  border: solid 2px #ea1616;
+  border: solid 2px #009688;
   display: block;
   width: 35px;
   margin: 25px auto;
@@ -298,20 +298,15 @@ h2::after {
   background: #e2e2e2;
   padding-top: 50px;
 }
+.dark-bg h2{
+  color: #000;
+}
 .dark-bg i {
   background: #e2e2e2;
   font-size: 100px;
   padding-top: 50px;
 }
-.dark-bg i:hover {
-  color: #00BCD4;
-  font-size: 100px;
-  padding-top: 50px;
-  transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-}
+
 .light-box {
   background-color: rgb(255, 255, 255, 0);
   padding: 15px 0;
@@ -640,7 +635,7 @@ CONTACT US
 }
 .contact-details h2 span {
   display: block;
-  color: #ea1616;
+  color: #009688;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 14px;
